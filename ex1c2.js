@@ -9,3 +9,10 @@ if (!Components.OutputTerminal.hasOutput(/hello,?\s*\w+[.,!?]?/i)) {
   };
 }
 return { pass: true };
+
+// Starting Workspace
+print('Hello, World!')
+
+// Expected Final Workspace
+name = "John"
+print(f"Hello, {name}!")
