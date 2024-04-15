@@ -18,3 +18,9 @@ if (!Components.OutputTerminal.hasOutput(/.*null_report1\.csv\n.*null_report2\.c
   };
 }
 return { pass: true };
+
+// Starting Workspace
+n/a
+
+// Expected Final Workspace
+n/a
