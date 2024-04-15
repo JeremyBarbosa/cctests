@@ -8,3 +8,9 @@ if (!Components.OutputTerminal.hasOutput(/(?=.*\b2022-07-03\b)(?=.*\b2022-07-04\
   };
 }
 return { pass: true };
+
+// Starting Workspace
+n/a
+
+// Expected Final Workspace
+n/a
