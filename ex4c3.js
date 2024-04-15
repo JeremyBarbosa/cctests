@@ -9,3 +9,9 @@ if (!Components.OutputTerminal.hasOutput(/(?=.*\bWidget X\b)(?=.*\bGadget Y\b)(?
   };
 }
 return { pass: true };
+
+// Starting Workspace
+n/a
+
+// Expected Final Workspace
+n/a
