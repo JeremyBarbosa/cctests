@@ -18,3 +18,9 @@ if (!Components.OutputTerminal.hasOutput(/info@buff-it-clean.com\neats@eatheredi
   };
 }
 return { pass: true };
+
+// Starting Workspace
+n/a
+
+// Expected Final Workspace
+n/a
