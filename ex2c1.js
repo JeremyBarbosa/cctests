@@ -18,3 +18,9 @@ if (!Components.OutputTerminal.hasOutput(/212-555-2101\n212-555-2105\n212-555-21
   };
 }
 return { pass: true };
+
+// Starting Workspace
+n/a
+
+// Expected Final Workspace
+n/a
