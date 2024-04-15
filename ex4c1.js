@@ -8,3 +8,9 @@ if (!Components.OutputTerminal.hasOutput(/(?=.*\bJohn Doe\b)(?=.*\bEmily Johnson
   };
 }
 return { pass: true };
+
+// Starting Workspace
+n/a
+
+// Expected Final Workspace
+n/a
