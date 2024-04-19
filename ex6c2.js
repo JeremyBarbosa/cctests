@@ -17,19 +17,19 @@ import random
 import string
 
 def generate_valid_email():
-    domains = ["gmail.com", "yahoo.com", "hotmail.com", "example.com"]
-    username = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
-    domain = random.choice(domains)
-    return f"{username}@{domain}"
+  domains = ["gmail.com", "yahoo.com", "hotmail.com", "example.com"]
+  username = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+  domain = random.choice(domains)
+  return f"{username}@{domain}"
 
 def generate_invalid_email():
-    return ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+  return ''.join(random.choices(string.ascii_letters + string.digits, k=10))
 
 def generate_valid_password():
-    return ''.join(random.choices(string.ascii_letters + string.digits + string.punctuation, k=12))
+  return ''.join(random.choices(string.ascii_letters + string.digits + string.punctuation, k=12))
 
 def generate_invalid_password():
-    return ''.join(random.choices(string.ascii_letters + string.digits, k=6))
+  return ''.join(random.choices(string.ascii_letters + string.digits, k=6))
 
 # Example usage:
 print("Valid email:", generate_valid_email())
