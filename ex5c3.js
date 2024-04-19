@@ -14,19 +14,19 @@ return { pass: true };
 
 // Final Workspace
 class Enemy:
-    def __init__(self, name, hit_points):
-        self.name = name
-        self.hit_points = hit_points
+  def __init__(self, name, hit_points):
+    self.name = name
+    self.hit_points = hit_points
 
-    def shout(self):
-        return "I will destroy you!"
+  def shout(self):
+    return "I will destroy you!"
 
-    def take_damage(self, damage):
-        self.hit_points -= damage
-        if self.hit_points <= 0:
-            return f"{self.name} has been defeated!"
-        else:
-            return f"{self.name} takes {damage} damage. {self.name} has {self.hit_points} hit points left."
+  def take_damage(self, damage):
+    self.hit_points -= damage
+    if self.hit_points <= 0:
+      return f"{self.name} has been defeated!"
+    else:
+      return f"{self.name} takes {damage} damage. {self.name} has {self.hit_points} hit points left."
 
 
 # Example usage:
