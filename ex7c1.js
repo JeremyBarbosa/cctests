@@ -14,22 +14,22 @@ return { pass: true };
 package main
 import "fmt"
 func twoSum(nums []int, target int) []int {
-    m := make(map[int]int);
-    for i, k := range nums {
-        key := target - k
-        v, ok := m[k]
-        if ok {
-            return []int {v, i}
-        }
-        m[key] = i
+  m := make(map[int]int);
+  for i, k := range nums {
+    key := target - k
+    v, ok := m[k]
+    if ok {
+      return []int {v, i}
     }
-    return []int {0,0}
+    m[key] = i
+  }
+  return []int {0,0}
 }
 func main() {
-    a := []int{2, 7, 11, 15}
-    b := 9
-    c := twoSum(a, b)
-    fmt.Println(c)
+  a := []int{2, 7, 11, 15}
+  b := 9
+  c := twoSum(a, b)
+  fmt.Println(c)
 }
 
 // Final Workspace
@@ -37,20 +37,20 @@ package main
 import "fmt"
 
 func twoSum(nums []int, target int) []int {
-    numMap := make(map[int]int)
-    for i, num := range nums {
-        complement := target - num
-        if index, ok := numMap[num]; ok {
-            return []int{index, i}
-        }
-        numMap[complement] = i
+  numMap := make(map[int]int)
+  for i, num := range nums {
+    complement := target - num
+    if index, ok := numMap[num]; ok {
+      return []int{index, i}
     }
-    return []int{0, 0}
+    numMap[complement] = i
+  }
+  return []int{0, 0}
 }
 
 func main() {
-    nums := []int{2, 7, 11, 15}
-    target := 9
-    result := twoSum(nums, target)
-    fmt.Println(result)
+  nums := []int{2, 7, 11, 15}
+  target := 9
+  result := twoSum(nums, target)
+  fmt.Println(result)
 }
