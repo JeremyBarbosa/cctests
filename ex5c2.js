@@ -14,28 +14,28 @@ return { pass: true };
 
 // Final Workspace
 class TicTacToeBoard:
-    def __init__(self):
-        self.board = [[' ' for _ in range(3)] for _ in range(3)]
+  def __init__(self):
+    self.board = [[' ' for _ in range(3)] for _ in range(3)]
 
-    def print_board(self):
-        print("  0 1 2")
-        for i in range(3):
-            print(i, end=' ')
-            for j in range(3):
-                print(self.board[i][j], end=' ')
-            print()
+  def print_board(self):
+    print("  0 1 2")
+    for i in range(3):
+      print(i, end=' ')
+      for j in range(3):
+        print(self.board[i][j], end=' ')
+      print()
 
-    def place_symbol(self, row, col, symbol):
-        if 0 <= row < 3 and 0 <= col < 3:
-            if self.board[row][col] == ' ':
-                self.board[row][col] = symbol
-                return True
-            else:
-                print("Cell already occupied.")
-                return False
-        else:
-            print("Invalid position.")
-            return False
+  def place_symbol(self, row, col, symbol):
+    if 0 <= row < 3 and 0 <= col < 3:
+      if self.board[row][col] == ' ':
+        self.board[row][col] = symbol
+        return True
+      else:
+        print("Cell already occupied.")
+        return False
+    else:
+      print("Invalid position.")
+      return False
 
 
 # Example usage:
